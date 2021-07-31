@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.nav-link {
+    color: #ffffff !important;
+}
