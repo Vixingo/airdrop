@@ -3,11 +3,279 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+    --high_color: #e86d84;
+    --main_text_Color: #f9f9f9;
+    --sec_color: #9ba9cc;
+}
 body {
     background-image: url(img/bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-color: rgb(3, 25, 116);
+}
+p {
+    color: var(--main_text_Color);
+}
+/* ----------- Navbar --------- */
+.navbar {
+    padding-top: 20px;
 }
 .nav-link {
     color: #ffffff !important;
+    font-size: 14px;
+    line-height: 22px;
+}
+.nav_search {
+    display: flex;
+}
+.nav_search .nav_connect {
+    width: 176px;
+    height: 36px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    background-color: var(--high_color);
+    border-radius: 3px;
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    margin-left: 15px;
+    transition: 0.2s;
+}
+.nav_connect:hover {
+    color: var(--high_color);
+    background-color: transparent;
+    border: 1px solid var(--high_color);
+}
+.nav_search input {
+    width: 275px;
+    height: 36px;
+    border-radius: 33px;
+    border: 1px solid var(--high_color);
+    background-color: transparent;
+}
+.nav_search input:focus {
+    color: var(--high_color);
+    background-color: transparent;
+    border-color: var(--high_color);
+    outline: 0;
+    box-shadow: none;
+}
+.nav_search input::placeholder {
+    color: var(--high_color);
+}
+.search_div {
+    position: relative;
+}
+.search_btn {
+    position: absolute;
+    right: 6.91%;
+    top: calc(50% - 20px / 2);
+    height: 20px;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--high_color);
+}
+.nav-item {
+    margin-left: 21px;
+}
+.nav-link {
+    padding: 0 !important;
+}
+/* ----- Hero -------- */
+.Hero {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.Hero_head {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    color: var(--main_text_Color);
+    position: relative;
+    margin-bottom: 31px;
+    margin-top: 45px;
+}
+.Hero_head::after {
+    position: absolute;
+    content: "";
+    margin-left: 5px;
+    width: 3px;
+    height: 70px;
+    background-color: var(--high_color);
+}
+.Hero_text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #9ba9cc;
+    margin-bottom: 25px;
+}
+.Hero_btn_1 {
+    width: 194px;
+    height: 46px;
+    background-color: var(--high_color);
+    color: #ffffff;
+    box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-right: 12px;
+    transition: 0.3s;
+}
+.Hero_btn_1:hover {
+    background-color: var(--main_text_Color);
+    color: var(--high_color);
+    transform: translateY(-5px);
+}
+.Hero_btn_2 {
+    width: 157px;
+    height: 46px;
+    background-color: transparent;
+    color: var(--high_color);
+    border: 1px solid var(--high_color);
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+.Hero_btn_2:hover {
+    color: var(--main_text_Color);
+    transform: translateY(-5px);
+}
+.Hero_img img {
+    margin-left: 30px;
+}
+/* Airdrop_list_1 */
+.dropdown-toggle::after {
+    vertical-align: 0.1rem;
+    scale: 0.9;
+}
+.Airdrop_list_1 .latest_btn {
+    color: var(--main_text_Color);
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 42px;
+    letter-spacing: 0.33px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.Airdrop_list_1 .latest_btn:hover {
+    color: var(--main_text_Color);
+}
+.ad_search_btn {
+    background-color: transparent;
+    color: var(--high_color);
+    border: 1px solid var(--high_color);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    height: 35px;
+    width: 233px;
+    border-radius: 3px;
+    filter: drop-shadow(-11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13));
+    margin-left: 28px;
+}
+.ad_search_btn:hover {
+    color: var(--main_text_Color);
+}
+/* airdrop list */
+.drop_name h4 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--main_text_Color);
+}
+.online {
+    color: var(--sec_color);
+    position: relative;
+    padding-left: 15px;
+}
+.online::before {
+    position: absolute;
+    content: "";
+    width: 8.17px;
+    height: 10px;
+    top: 50%;
+    left: 0;
+    border-radius: 50%;
+    background: #8dea6d;
+    transform: translateY(-50%);
+}
+.end_date p {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.reward h3 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--main_text_Color);
+    text-align: right;
+}
+.tittle_div {
+    margin-top: 30px;
+}
+
+.tittle_div p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.Airdrop_item {
+    margin-bottom: 20px;
+}
+.Airdrop_list_1 {
+    margin-bottom: 100px;
+}
+/* How_it_work */
+.How_it_work h1 {
+    text-align: center;
+    color: var(--main_text_Color);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+}
+.How_it_work .how_tittle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--sec_color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.how_head {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--main_text_Color);
+}
+.how_text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--sec_color);
 }
